@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuProgramas">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="5dp"
+        android:text="Media Recorder"
+        app:layout_constraintBottom_toTopOf="@+id/btn02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="5dp"
+        android:text="Graficar Pixeles"
+        app:layout_constraintBottom_toTopOf="@+id/btn03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn01" />
+
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="5dp"
+        android:text="Fondo y Lineas"
+        app:layout_constraintBottom_toTopOf="@+id/btn04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn02" />
+
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="5dp"
+        android:text="Circulo"
+        app:layout_constraintBottom_toTopOf="@+id/btn05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn03" />
+
+    <Button
+        android:id="@+id/btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="120dp"
+        android:text="Reproduccion de Audio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn05" />
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="5dp"
+        android:text="SQL"
+        app:layout_constraintBottom_toTopOf="@+id/btn06"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn04" />
+</androidx.constraintlayout.widget.ConstraintLayout>

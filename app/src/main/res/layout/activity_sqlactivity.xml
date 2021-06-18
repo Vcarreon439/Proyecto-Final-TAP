@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLActivity">
+
+    <EditText
+        android:id="@+id/edCodigo"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Ingrese código del producto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Ingrese descripción"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCodigo" />
+
+    <EditText
+        android:id="@+id/edPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="ingrese precio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edDescripcion" />
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="2dp"
+        android:text="Alta"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultaCod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPrecio" />
+
+    <Button
+        android:id="@+id/btnConsultaCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="2dp"
+        android:text="Consulta por código"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultaDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlta" />
+
+    <Button
+        android:id="@+id/btnConsultaDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="2dp"
+        android:text="Consulta por Descripción"
+        app:layout_constraintBottom_toTopOf="@+id/btnBajaCod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultaCod" />
+
+    <Button
+        android:id="@+id/btnBajaCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="2dp"
+        android:text="Baja por código"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultaDesc" />
+
+    <Button
+        android:id="@+id/btnModificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="100dp"
+        android:text="Modificación"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBajaCod" />
+</androidx.constraintlayout.widget.ConstraintLayout>

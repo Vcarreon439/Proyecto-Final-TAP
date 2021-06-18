@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaRecorder">
+
+    <Button
+        android:id="@+id/btnGrabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="10dp"
+        android:text="Grabar"
+        app:layout_constraintBottom_toTopOf="@+id/btnDetenerGrabacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDetenerGrabacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="5dp"
+        android:text="Detener Grabacion"
+        app:layout_constraintBottom_toTopOf="@+id/btnReproducir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGrabar" />
+
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="20dp"
+        android:text="Reproducir Grabacion"
+        app:layout_constraintBottom_toTopOf="@+id/tvEstado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDetenerGrabacion" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="328dp"
+        android:text="Estado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReproducir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
